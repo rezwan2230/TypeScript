@@ -19,6 +19,7 @@ const poorUser = {
     },
 };
 poorUser.addBalance(10);
+// Array Map
 const arr = [10, 20, 30, 40];
 const newArr = arr.map((arr) => arr * arr);
 console.log(newArr);
