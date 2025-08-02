@@ -23,8 +23,8 @@ const user = {
 };
 const { name: { middleName: name }, //name elias
 address: { presentAddress: { division: bivag }, }, } = user;
-// console.log("🚀 ~ middleName:", name);
-// console.log("🚀 ~ division:", bivag);
+console.log("🚀 ~ middleName:", name);
+console.log("🚀 ~ division:", bivag);
 //array destructuring
 const myFriends = ["zishan", "tailor", "kaziyal", "harun", "oishi", "mahadi"];
 const [, , bestFriend, ...rest] = myFriends;
