@@ -1,5 +1,5 @@
 "use strict";
-// spread operator, rest operator and destructuring
+// spread operator, rest operator
 Object.defineProperty(exports, "__esModule", { value: true });
 //spread operator
 const arr1 = ["rezwan", "mir", "mizan"];
@@ -21,7 +21,7 @@ const mentorList = {
 };
 //learn rest operator
 const greatFrinds = (...frinds) => {
-    console.log(`Hi ${frinds[0]} ${frinds[1]} ${frinds[2]}`);
-    //   frinds.forEach((friend: string) => console.log(`Hi ${friend}`));
+    // console.log(`Hi ${frinds[0]} ${frinds[1]} ${frinds[2]}`);
+    frinds.forEach((friend) => console.log(`Hi ${friend}`));
 };
 greatFrinds("rezwan", "mohabbat", "mitul");

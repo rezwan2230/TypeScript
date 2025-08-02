@@ -1,4 +1,4 @@
-// spread operator, rest operator and destructuring
+// spread operator, rest operator
 
 //spread operator
 const arr1: string[] = ["rezwan", "mir", "mizan"];
