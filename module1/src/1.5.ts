@@ -1,7 +1,8 @@
 //Reference Type -->Object
 
 const user: {
-  company: "Programming Hero"; //literal type
+  // company: "Programming Hero"; //literal type
+  readonly company: "Programming Hero";
   firstName: string;
   middelName?: string;
   lastName: string;
@@ -13,3 +14,5 @@ const user: {
   isMarried: true,
   company: "Programming Hero",
 };
+
+// user.company = "df"; //It will give an error because company is read only. we can't modify it.
