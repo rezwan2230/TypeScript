@@ -1,4 +1,4 @@
-//Generic type
+//Generic with type alias
 
 type GenericArray<T> = Array<T>;
 
