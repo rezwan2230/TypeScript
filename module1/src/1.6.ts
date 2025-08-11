@@ -26,3 +26,5 @@ poorUser.addBalance(10);
 const arr: number[] = [10, 20, 30, 40];
 const newArr: number[] = arr.map((arr: number): number => arr * arr);
 console.log(newArr);
+
+

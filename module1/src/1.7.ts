@@ -20,6 +20,7 @@ const mentorList = {
   ...mentors1,
   ...mentors2,
 };
+console.log(mentorList);
 
 //learn rest operator
 const greatFrinds = (...frinds: string[]): void => {

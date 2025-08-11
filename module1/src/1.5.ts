@@ -16,3 +16,5 @@ const user: {
 };
 
 // user.company = "df"; //It will give an error because company is read only. we can't modify it.
+
+
