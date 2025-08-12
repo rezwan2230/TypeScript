@@ -6,7 +6,7 @@ class Animal {
     public species: string,
     public sound: string
   ) {}
-  
+
   //!arrow function are not working here couse if we write an arrow function here we can't use "this" keyword.
   makeSound() {
     console.log(`The ${this.name} says ${this.sound}`);
@@ -19,3 +19,4 @@ console.log(dog);
 dog.makeSound();
 console.log(cat);
 cat.makeSound();
+
