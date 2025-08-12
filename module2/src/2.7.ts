@@ -12,7 +12,6 @@ const person: Owner1 = "bike";
 
 type Owner2 = keyof Vehicle;
 
-
 const user = {
   name: "zishan",
   id: 4,
