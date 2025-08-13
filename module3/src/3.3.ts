@@ -17,7 +17,6 @@ const add1: AddTwoInteger = (param1, param2) => {
 };
 console.log(add1(4, 5));
 
-
 //todo-> another option to add interger or string
 type TA = string | number;
 type TAddTowIntegerOrString<X, Y> = X extends string
@@ -42,25 +41,23 @@ const addTwoIntegerOrString = <T extends TA, U extends TA>(
 console.log(addTwoIntegerOrString(5, 3));
 console.log(addTwoIntegerOrString(5, "3"));
 
-
-
 //todo-> in guard
+//!always works on object
 type TNormalUser = {
-    name: string;
-}
+  name: string;
+};
 type TAdminUser = {
-    name: string;
-    role: string;
-}
-const getUser = (user: TNormalUser|TAdminUser)=>{
-    if("role" in user){
-        console.log(`My name is ${user.name} and my role is : ${user.role}`);
-    }else{
-        console.log(`My name is ${user.name} and I am a : normal user`);
-    }
-}
-const result1 = getUser({name: "rezwan"})
-const result2 = getUser({name: "rezwan", role: "admin"})
-
-
+  name: string;
+  role: string;
+};
+const getUser = (user: TNormalUser | TAdminUser) => {
+  if ("role" in user) {
+    //?always works on object
+    console.log(`My name is ${user.name} and my role is : ${user.role}`);
+  } else {
+    console.log(`My name is ${user.name} and I am a : normal user`);
+  }
+};
+const result1 = getUser({ name: "rezwan" });
+const result2 = getUser({ name: "rezwan", role: "admin" });
 
