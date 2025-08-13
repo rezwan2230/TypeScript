@@ -56,11 +56,11 @@ class Rectangle extends Shape {
   }
 }
 
-const getShape = (param: Shape) => {
+const getShapeArea = (param: Shape) => {
   console.log(param.getArea());
 };
 
 const circle = new Circle(3);
 const rectangle = new Rectangle(3, 5);
-getShape(circle);
-getShape(rectangle);
+getShapeArea(circle);
+getShapeArea(rectangle);
